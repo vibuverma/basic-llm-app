@@ -21,7 +21,6 @@ def get_gemini_response(question):
     return response.text
 
 # streamlit app
-st.title("Gemini Pro Chatbot")
 st.set_page_config(page_title="Gemini Pro Chatbot", layout="wide")
 st.header("Gemini LLM Application")
 
