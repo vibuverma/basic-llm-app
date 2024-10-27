@@ -24,3 +24,11 @@ def get_gemini_response(question):
 st.title("Gemini Pro Chatbot")
 st.set_page_config(page_title="Gemini Pro Chatbot", layout="wide")
 st.header("Gemini LLM Application")
+
+input = st.text_input("Enter your question:", key="input")
+submit = st.button("Submit")
+
+if submit:
+    output = get_gemini_response(input)
+    st.subheader("Response:")
+    st.write(output)
